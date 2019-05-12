@@ -15,7 +15,8 @@ Using JavaScript directly
 I have used javascrtip in safari V12.1.0 and npm 6.9.0
 See the results:
 
-![]()
+![1](https://github.com/Ghasak/VisualEffectJS/blob/master/1.gif)
+![2](https://github.com/Ghasak/VisualEffectJS/blob/master/2.gif)
 ## Authors
 
 * **Ghasak Ibrahim** - *Initial work* -
