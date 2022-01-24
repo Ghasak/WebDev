@@ -86,11 +86,11 @@ console.log(listUsers.indexOf('John'));
 
 
 ```
-if you want to loop over object (dict) accessing `keys` and `values` can be done using 
+If you want to loop over object (dict) accessing `keys` and `values` can be
+done using.
 
 ```javascript
 // looping over objects
-
 const user = {
     name: 'John',
     age: 30,
@@ -111,31 +111,24 @@ const names = ['John', 'Jane', 'Mary'];
 for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
-console.log(`====================`);
 names.forEach(function(name) {
     console.log(name);
 });
-console.log(`======== forEach with regular fucntion ============`);
+// foreach with regular function declaration
 names.forEach(function(name, index) {
     console.log(`${index} - ${name}`);
 });
-
-console.log(`====== use arrow function with foreach ==============`);
+// foreach with arrow function
 names.forEach((name, index) => {
     console.log(`${index} - ${name}`);
 });
-
-console.log(`====================`);
+// arrow function with single arg.
 names.forEach(name => console.log(name));
-
-console.log(`====== for of  is introducted in ES6 ==============`);
-
-
+// for-of is introduced in ES6
 for (let name of names) {
     console.log(name);
 }
-
-console.log(`========= This is the orignal JS for in ===========`);
+// This is the original statement introduced since JS
 for (let name in names) {
     console.log(names[name]);
 }
