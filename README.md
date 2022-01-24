@@ -30,9 +30,119 @@ learning the following concepts
 - [x] looping
 - [x] lists dict, sets, and generators.
 
+
+## Concepts in JavaScript
+1. `Hoisting`, the compiler will move all declaration a head, it is possible to
+   use a variable, object, function ... etc., before declaration, check here
+   [Hoisting in JavaScript](https://www.tutorialsteacher.com/javascript/javascript-hoisting).
+
 ## DOM
 
 ## Array
+
+Define `declare` and loop over array or an object in JavaScript.
+```JavaScript
+
+// Methods of declare an array
+// let arrayName = new Array();
+// let arrayName = new Array(Number length);
+// let arrayName = new Array(element1, element2, element3,... elementN);
+
+const listUsers = ['Jane', 'John', 'Mary', 'Mark', 'Mike', 'Tom'];
+
+// counting form zero
+
+for (let i = 0; i < listUsers.length; i++) {
+    console.log(listUsers[i]);
+}
+
+console.log(typeof listUsers);
+
+
+// loop over an array elements
+
+// 1. for
+for (let i = 0; i < listUsers.length; i++) {
+    console.log(listUsers[i]);
+}
+// 2. forEach
+listUsers.forEach(element => {
+console.log(element);
+});
+// 3. for of
+for (let item of listUsers) {
+    console.log(item);
+}
+
+// 4. for in
+for (let i in listUsers) {
+    console.log(listUsers[i]);
+}
+
+
+// Getting the index of an element in an array
+console.log(listUsers.indexOf('John'));
+
+
+
+```
+if you want to loop over object (dict) accessing `keys` and `values` can be done using 
+
+```javascript
+// looping over objects
+
+const user = {
+    name: 'John',
+    age: 30,
+    subscriped: true,
+    city: 'New York'
+};
+
+for (let key in user) {
+    console.log(`${key} : ${user[key]}`);
+}
+
+```
+
+More about for loop and with array
+
+```javascript
+const names = ['John', 'Jane', 'Mary'];
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+console.log(`====================`);
+names.forEach(function(name) {
+    console.log(name);
+});
+console.log(`======== forEach with regular fucntion ============`);
+names.forEach(function(name, index) {
+    console.log(`${index} - ${name}`);
+});
+
+console.log(`====== use arrow function with foreach ==============`);
+names.forEach((name, index) => {
+    console.log(`${index} - ${name}`);
+});
+
+console.log(`====================`);
+names.forEach(name => console.log(name));
+
+console.log(`====== for of  is introducted in ES6 ==============`);
+
+
+for (let name of names) {
+    console.log(name);
+}
+
+console.log(`========= This is the orignal JS for in ===========`);
+for (let name in names) {
+    console.log(names[name]);
+}
+
+
+```
+
 ## Objects
 ## OOP with objects
 ## Other concepts
