@@ -143,3 +143,6 @@ for (let name in names) {
 ### promises
 ### arrow functions
 
+# References
+- [JavaScript with Teacher](https://www.tutorialsteacher.com/javascript/display-popup-message-in-javascript)
+
