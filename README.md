@@ -10,6 +10,21 @@ custom responsive websites and app UIs.
 
 ## My Note
 
+- Basics of How website works
+- Setup & Tools
+- HTML 5
+- CSS Fundamentals
+- Responsive Design
+- Flexbox
+- CSS Grid
+- Animation (transitions, keyframes, ... etc.)
+- CSS variables, transform, Psedudo slectors,
+- Sitcky menus Overlays form styling, landing pages,
+- website deployment, Shared Host & Netlifty
+- Sass CSS pre-commpiler
+-
+
+#
 
 
 
