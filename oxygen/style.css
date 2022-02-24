@@ -1,0 +1,81 @@
+/* https://www.youtube.com/watch?v=sLhiZM_Njd0 */
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  background-origin: padding-box;
+  font-family: 'Farro', sans-serif;
+  font-size: 6em;
+  text-align: center;
+}
+
+h2 span {
+  position: relative;
+  display: inline-flex;
+  color: #f87581; /* #fac072; */
+}
+
+h2 span:nth-child(odd) {
+  color: #414141;
+  line-height: 1em;
+  overflow: hidden;
+  letter-spacing: -1em;
+  transition: 1s ease-in-out;
+}
+h2:hover span:nth-child(odd) {
+  letter-spacing: 0;
+}
+
+h2 span:nth-child(2) {
+  margin-right: 10px;
+}
+h2 span:nth-child(2):after {
+  content: '2';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 0.35em;
+  right: -10px;
+}
+
+h2 i {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #777;
+  font-weight: 400;
+  font-style: initial;
+  line-height: 1em;
+}
+h2 i::before {
+  content: 'Γκχαζακ';
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  display: initial;
+  transition: 1s;
+}
+
+h2:hover i::before {
+  opacity: 0;
+  letter-spacing: 2em;
+}
+
+h2 i::after {
+  content: 'Econometric Land';
+  opacity: 0;
+  visibility: hidden;
+  transition: 1.3s;
+}
+
+h2:hover i::after {
+  opacity: 1;
+  visibility: visible;
+}

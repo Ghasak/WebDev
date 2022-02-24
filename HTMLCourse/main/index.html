@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>learning HTML</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style type="text/css">
+      #my-footer {
+        text-align: center;
+        font-size: 18px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!--Image -->
+    <img src="../images/images.png" alt="My Sample Image" height="200" width="600">
+    <br>
+    <a href="../blog.html"> Go back to my Blog</a>
+    <h1>HTML in depth</h1>
+    <p>Here adding some files to be checked later</p>
+    <h2>1.1 Learning tech</h2>
+    <p>This is the another way to express a file here</p>
+    <h2>1.2 Adding new features</h2>
+    <h3>1.1.1 This is a subtitle</h3>
+    <p>
+      Here will learn about Then continue your work for the next paragraph. All
+      these can be modified later using the <strong>css style</strong>.
+      <ul>
+        <li>This is the <strong>Highlight something </strong> first element</li>
+        <li>We can also use <em>emphasize tag</em> which started with the em</li>
+        <li>
+          Link, how to add them using anchor tag started with a as you can see ,
+          href can be local or can be global to the location that we would like to
+          anchor. Lets stat with this location
+          <a href="http://www.google.com" target="_blank"
+            >Link to Google Search Engine </a
+          >. If you refer to a page within same website then remove the target.
+          target will open a new tab for the reference link.
+        </li>
+
+      </ul>
+    </p>
+    <h1>How to add list to your work</h1>
+    <p>Usually there is two type of list we can add, which are:
+    <strong>Unordered list </strong> and <strong>Ordered list</strong>
+    <h2>Unordered list</h2>
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ul>
+    <h2>Ordered List </h2>
+    <ol>
+      <li>List Item 1 </li>
+      <li>List Item 2 </li>
+      <li>List Item 3 </li>
+      <li>List Item 4 </li>
+    </ol>
+    </p>
+    <h1>Table in HTML </h1>
+    <p>
+    Lets add now a table , but before lets make a margin so we can see the table
+    at the end using the tag <strong>div</strong> Now lets add our table. I will put it at the end before the body end tag.
+    </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <tbody>
+          <tr>
+            <td>Ghasak Ibrahim</td>
+            <td>mdotgh@gmail.com</td>
+            <td>38</td>
+          </tr>
+          <tr>
+            <td>Nichola Ito</td>
+            <td>Nichola@gmail.com</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </tr>
+    </thead>
+  </table>
+
+  <br>
+  Here, without adding a break of css,  adding a separation.Using horizontal rule,
+  <hr>
+  </br>
+
+  <h1>Forms  </h1>
+  <p>
+
+  Form  tag will be added here. Server side form
+  <form action="index_submit" method="get" accept-charset="utf-8">
+    <div>
+      <label>First Name</label>
+      <input type="text" name = "first-name" placeholder="Enter your first name">
+    </div>
+    <br>
+    <div>
+      <label>Last Name</label>
+      <input type="text" name = "first-name" placeholder="Enter your last name">
+    </div>
+    <br>
+    <div>
+      <label>Email Name</label>
+      <input type="text" name = "first-name" placeholder="Email address ">
+    </div>
+    <br>
+    <div>
+      <label>Message</label>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Write here your message "></textarea>
+
+    </div>
+    <br>
+    <div>
+      <label>Gender</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">others</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label> Age: </label>
+      <input type="number" name = "age" value= "30">
+    </div>
+    <div>
+      <label>Birthday: </label>
+      <input type="date" name="birthday" id="">
+    </div>
+    <br>
+    <input type="submit" name="submit the Info" value = "Submit Your Info" >
+  </form>
+  </p>
+  You can add a button tag, and usually we hook a button using a Javascript with event.
+  But, we will not go into this now. Usually it should be something like
+  <strong>
+    <button button click = "someFunction">click me </button>
+  </strong>
+  <br>
+  <button> Click Me </button>
+  <br>
+  <!-- Quotations -->
+  <blockquote cite="http://ghasak_Ibrahim.com">
+    soluta eius. Nutla molestias, dolorum nesciunt, ad animi adipisci cupiditate
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda
+    sint recusandae laborum asperiores maxime iste nisi porro distinctio labore.
+  </blockquote>
+
+  <p>Show the abbreviations: The <abbr title="World Wide Web">WWW</abbr> is awesome </p>
+  <p><cite>HTML Crash Course</cite> by Ghasak Ibrahim.</p>
+
+  <h1>HTML5.0 Semantic Tags</h1>
+  <p>A semantic Element clearly describes
+  its meaning to both the browser and the developer</p>
+
+  <ul>
+    <li>We have header </li>
+    <li>footer </li>
+    <li>aside</li>
+    <li>main</li>
+    <li>article</li>
+    <li>nav</li>
+    <li>section</li>
+    <li>details</li>
+  </ul>
+  <br>
+    more details can be found here:
+    <img src="../images/1.png" alt="My Sample Image" height="400" width="800">
+  <div style="margin-top:50px"></div>
+    <footer id="my-footer">
+      <p>Copyright &copy; 2021, My Website</p>
+    </footer>
+  </body>
+</html>

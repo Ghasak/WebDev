@@ -1,0 +1,25 @@
+/*
+ * This is the css Style that will be loaded to the html file
+ *
+ */
+
+/* Import your custom font in your root directory
+ * Source: https://www.youtube.com/watch?v=K_4zUk3xd00
+ * */
+@font-face {
+  font-family: comics;
+  src: url('../fonts/comics.ttf');
+}
+
+/* Bod of our website customization */
+body {
+  background-color: #f4f4f4;
+  /* Change the color of the text */
+  color: #555555;
+}
+
+h1,
+h2 {
+  color: black;
+  font-family: comics;
+}
