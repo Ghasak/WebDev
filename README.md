@@ -1,4 +1,5 @@
 # Fundamentals
+
 ## Contents
 This course is for both beginners and seasoned developers that want to learn
 how to build responsive websites and user interfaces with modern HTML5 and
@@ -24,7 +25,23 @@ custom responsive websites and app UIs.
 - Sass CSS pre-commpiler
 -
 
-# 
+#  Web Server
+Websites/ webpages are files stored on computers with run a piece of software called a web server.
+Basically you will need two things:
+- Hosting companies, provide spce on a server, webServer (Apache, Nginx, ... etc.)
+- A Domain names, `TLD`: `Top-level domain`,
+
+`DNS` : is used to map IP addresses to domain names.
+
+## Process of loading a webpages
+
+```shell
+DNS (Server): google.com 192.168.1.4 --> 192.168.1.4 <--  Web Browser--> 192.168.1.4 <-- Server
+                                                            -> webpage -> www.google.com <- User
+```
+
+## The Roles of HTML, CSS in WebDev:
+
 
 
 
