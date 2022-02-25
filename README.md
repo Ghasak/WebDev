@@ -44,7 +44,29 @@ DNS (Server): google.com 192.168.1.4 --> 192.168.1.4 <--  Web Browser--> 192.168
                                                             -> webpage -> www.google.com <- User
 ```
 
-# HTML Fundamentals
+# Useful tips and tricks
+
+- [x] In html file use (`!`) and (Inter) to get the direct
+- [x] use `p` to use the `emmet` then hit enter to get a paragraph.
+- [x] Adding a comment in `HTML`.
+    - ```<!--- Adding a comment --- > ```
+- [x] You can add new line using (command + enter) at any place in `HTML`
+- [x] You can add a dummy text file using (Lorem + enter) or (Lorem 10 + enter) to add only `10` words.
+- [x] You can use this trick to add a quick attribute with id ``` <!-- You can write div#about then hit enter to get emmet working -->``` or ```<!-- In case of div you can use directly # + Enter -->```
+- [x] `div` is a block separator, used mainly to highlight a block.
+- [x] `span` is inline separator, which usually we use to add a style for a specific inline element (e.g, word, paragraph ... etc.).
+- [x] We can add a copyright using `&copy` symbol.
+- [x] For including space or copyright or other symbols, including `code snippets` or `keyboard` shortcuts, check the `html entities section`.
+- [x] You can also download a given section from any html page (like tables or other) by first right click and inspect the element (e.g., table) then see where it is located in the source code to copy it, I use `Google Chrome` to conduct this action.
+
+- [x] `node` and `elment` are same, can be used exchangabliy.
+- [x] Element also can be refered to as `tag`, (e.g. body, h1 , p , .... etc.)
+- [x] `node` and `elment` are same, can be used exchangabliy.
+- [x] About the color refer to
+  - To get specific color, shade, tints ..etc., use [color-hex](https://www.color-hex.com/)
+  - To generate a specific pallette use [colors palette](https://coolors.co/351431-775253-bdc696-d1d3c4-dfe0dc)
+
+# 1. HTML Fundamentals
 ## The Roles of HTML, CSS in WebDev:
 
 - What is HTML?
@@ -59,20 +81,6 @@ DNS (Server): google.com 192.168.1.4 --> 192.168.1.4 <--  Web Browser--> 192.168
 - Div, Span, ID, Class
 - HTML Entities,
 - HTML5 Semantic Tags.
-## Useful tips and tricks
-
-- [x] In html file use (`!`) and (Inter) to get the direct
-- [x] use `p` to use the `emmet` then hit enter to get a paragraph.
-- [x] Adding a comment in `HTML`.
-    - ```<!--- Adding a comment --- > ```
-- [x] You can add new line using (command + enter) at any place in `HTML`
-- [x] You can add a dummy text file using (Lorem + enter) or (Lorem 10 + enter) to add only `10` words.
-- [x] You can use this trick to add a quick attribute with id ``` <!-- You can write div#about then hit enter to get emmet working -->``` or ```<!-- In case of div you can use directly # + Enter -->```
-- [x] `div` is a block separator, used mainly to highlight a block.
-- [x] `span` is inline separator, which usually we use to add a style for a specific inline element (e.g, word, paragraph ... etc.).
-- [x] We can add a copyright using `&copy` symbol.
-- [x] For including space or copyright or other symbols, including `code snippets` or `keyboard` shortcuts, check the `html entities section`.
-- [x] You can also download a given section from any html page (like tables or other) by first right click and inspect the element (e.g., table) then see where it is located in the source code to copy it, I use `Google Chrome` to conduct this action.
 
 ### Tag Syntax
 
@@ -458,7 +466,7 @@ Things to be covered here:
 - [x] Form Styling
 - [x] Dev Tools
 
-### CSS Implementation
+### 2. CSS Implementation
 
 #### The CSS Syntax
 ![CSS Syntax](./Artifcats/CH02_01.png)
@@ -507,9 +515,17 @@ h3 {
 
 ### Dev Tools Introduction
 For sake of learning the `css` we will use the second method `A.2` to keep things all in one file `index.html` file.
-#### difference between ID and Class for CSS
+#### Difference between ID and Class for CSS
+
+- [x] `node` and `elment` are same, can be used exchangabliy.
+- [x] Element also can be refered to as `tag`
+- [x] Selector for CSS is the way to access and style a given `tag:element:node`.
+
 
 ```html
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -517,32 +533,365 @@ For sake of learning the `css` we will use the second method `A.2` to keep thing
     <title>Document</title>
     <!-- Remember # for ids and . for classes -->
     <style>
+        /* Style for all elements */
+        *{
+            font-family: sans-serif;
+            font-size: 1.1em;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
         h2{
             color: red;
+            font-size:1.1em;
         }
         /* (#) for ids styling*/
-        h2#lightcoral-heading{
+        h2#primary-heading{
             color: lightcoral;
         }
         /* (.) for classes styling*/
-        h2.lightblue-heading{
+        h2.secondary-heading{
             color: lightblue;
         }
+        /* (#) you can add for a given id or class*/
+        #article-title {
+            color: green;
+        }
+        /* Multiple Selector for ids and classes*/
+        h2.secondary-heading#primary-heading{
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 5px
+        }
+        #my-footer {
+            text-align: center;
+            font-size: 18px;
+          }
+
+        /* inside your elmement by id style the paragraph */
+        #welcome p{
+            font-size: 20px;
+            color: white;
+            background-color: blueviolet;
+        }
+
     </style>
 </head>
 <body>
+
     <div>
         <h2>About</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur accusantium quisquam deserunt possimus maiores rem voluptates voluptatum accusamus laborum, culpa ratione? Neque nam nobis perspiciatis vitae numquam odio amet.</p>
 
     </div>
     <div>
-        <h2 id="lightcoral-heading">Welcome</h2>
+        <h2 id="primary-heading">Welcome</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum facere consectetur nihil earum quo eos, animi voluptas voluptatum temporibus eum non explicabo sint accusamus, sit necessitatibus. Hic, dolores voluptas?</p>
     </div>
     <div>
-        <h2 class="lightblue-heading">Contact</h2>
+        <h2 class="secondary-heading">Contact</h2>
         <p>Here is the final submitted file</p>
     </div>
+    <!-- for id selector only -->
+    <div>
+        <h1 id = "article-title">Adding Article title</h1>
+        <p>Adding here some values</p>
+    </div>
+    <!-- for multiple selector -->
+    <div>
+        <h2 id = "primary-heading" class="secondary-heading">Secondary Heading</h2>
+
+    </div>
+    <div id = "welcome">
+        <h1> Highlight only the paragraph with selector of id element</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum facere consectetur nihil earum quo eos, animi voluptas voluptatum temporibus eum non explicabo sint accusamus, sit necessitatibus. Hic, dolores voluptas?</p>
+    </div>
+
+</body>
+</html>
+
+```
+
+### Dev Tools Introduction
+
+In  Google chrome:
+- (option + i) will show the developer tool options
+- (option command + j ) will open the `JavaScript` console.
+
+### Fonts in CSS
+#### General font notes
+
+There several ways to use fonts and font-style with `HTML5` and `CSS` components.
+Here we have web safe fonts, which mean almost every browser having this set of `font-family`.
+![Web Safe Fonts](./Artifcats/CH02_02.png).
+
+- [x] You can get fonts form `www.google.fonts.com` and select a font you want like following:
+![Google fonts](./Artifcats/CH02_03.png)
+
+
+#### Fonts already available
+Similar to what we saw in the `General font notes section`.
+#### Link fonts remotely
+
+You can use either the `link` in `HTML5` like
+
+```html
+ <!-- Import the font as a link in html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+           /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+           font-family: 'Roboto Condensed', sans-serif;
+        }
+
+    </style>
+```
+or you can copy the `CSS` selector with font `@import` which will allow us to remotly connect any font or other `CSS` style-files.
+
+```html
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+        body{
+           /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+           font-family: 'Roboto Condensed', sans-serif;
+        }
+
+    </style>
+```
+
+
+
+#### Link fonts locally.
+
+Locally connecting fonts is simiarl to add them like `style.css` files. We have explicity to add the `font file` to the same directory and refer to it.
+- You can also put the `@font-face` style in the `style.css` separated file and refer to it inside the `index.html` file.
+```html
+
+    <style>
+        /* Adding custom font refer to inside the HTML-Style tag */
+        @font-face {
+            font-family: comics;
+            src: url('./fonts/comics.ttf');
+        }
+
+        h1{
+            color: #ffffff;
+            background-color: black;
+            font-family: comics;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+    </div>
+```
+
+
+
+
+
+### Font Size
+We can use font size based on `CSS units absolute` as shown below.
+![Font size Absolute](./Artifcats/CH02_04.png)
+
+Also, there is `CSS units relative` as shown below
+![Font Size Relative](./Artifcats/CH02_05.png)
+
+- For example, `1 em` as you set the font size of the `parent element` to `16`, then the `1 em` means 16 font size. If you specify `1.2 em` then the font size is `1.2 x 16` of the `parent element` font size which is set to `16`.
+- Same goes to the `1 rem` but instead it uses the relative root element font size and so on.
+
+```html
+
+    <title>Document</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+        body{
+           /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+
+               font-family: 'Roboto', sans-serif;
+               font-family: 'Roboto Condensed', sans-serif;
+               font-size: 20px;
+               font-weight: 400;
+               line-height: 1em;
+                color: #333;
+
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1em;
+            color: coral;
+        } ;
+
+
+    </style>
+</head>
+<body>
+
+    <div id = "welcome">
+        <h2 class="primary-heading"> Welcome </h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus praesentium reiciendis ipsum suscipit non dignissimos eveniet, iure eaque! Non nesciunt necessitatibus at qui debitis fugiat suscipit, cum nostrum aspernatur dolorum!</p>
+    </div>
+
+    <div id = "about">
+        <h2 class="primary-heading"> About </h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptates, ea exercitationem quas ipsa explicabo iure iusto itaque hic esse repudiandae autem atque deleniti aspernatur molestias provident unde, culpa corrupti!</p>
+    </div>
+
+
 </body>
 ```
+
+### Color types
+
+Colors can be used in `HTML` either:
+- color name (e.g., red, coral, ... etc.)
+- RGB as in (red, green , blue) ranging between 0 and 255. (e.g., rgb(0,0,0), rgb(100,100,100))
+- Hexadecimal number (e.g., #ffff, #ccc, #fff000)
+- You can use the following website to refer to the color palette names and numbers. Color-hex gives information about colors including color models (RGB,HSL,HSV and CMYK), Triadic colors, monochromatic colors and analogous colors calculated in color page.
+  - To get specific color, shade, tints ..etc., use [color-hex](https://www.color-hex.com/)
+  - To generate a specific pallette use [colors palette](https://coolors.co/351431-775253-bdc696-d1d3c4-dfe0dc)
+
+```html
+
+    <title>Document</title>
+    <style>
+        /* Adding custom font refer to inside the HTML-Style tag */
+        @font-face {
+            font-family: comics;
+            src: url('./fonts/comics.ttf');
+        }
+
+        h1{
+            color: whitesmoke;
+            background-color: rgb(0,0,0); /* 255 is maxium */
+
+            font-family: comics;
+        }
+        #colorName{
+            color: lightcoral; /* 255 is maxium */
+            background-color: whitesmoke;
+            font-family: comics;
+        }
+        #RGB{
+            color: rgb(255,255,255); /* 255 is maxium */
+            background-color:rgb(0,0,0);
+            font-family: comics;
+        }
+        #HEX{
+            color:#ffff ; /* 255 is maxium */
+            background-color:#ff0000;
+            font-family: comics;
+        }
+    </style>
+
+```
+
+
+### Backgrounds & Boarders
+
+
+```html
+
+    <style>
+        #box-1 {
+            background-color: cornsilk;
+            /* You can specify border properity for a given
+            border-width : 3px;
+            border-color: red;
+            border-style: solid; */ /* dotted, dashed, solid, double */
+            border : 3px solid red;
+            border-radius: 20px;
+
+        }
+        #box-2{
+            background-color: cornsilk;
+            border: 3px solid blue;
+            border-top-right-radius: 20px;
+        }
+
+        #box-3{
+            background-image: url("./images/IMG02_01.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: -100px -100px;
+           /* if you use cover, it will take the whole space, */
+            background-size: cover;
+            color : white;
+            font-size: 20px;
+            width: 400px;
+            height: 200px;
+        }
+
+        #box-4{
+            background: url("./images/IMG02_01.jpeg") no-repeat center;
+            /* This property will make our background fixed */
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+
+        }
+    </style>
+```
+
+### Box Model, Margin & Padding
+For box model, margin and padding we can refer:
+![Box Model, Margin and Padding](./Artifcats/CH02_06.png)
+
+```html
+
+    .box-1{
+        color: lightblue;
+        background: black;
+        border: 3px solid red;
+        border-radius: 20px;
+        width : 500px;
+        box-sizing: border-box;
+        /* Padding on all sides */
+        padding : 20px;
+
+        /* Padding per side */
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom : 10px;
+        padding-left: 20px;
+
+        /* Padding shorthand = top, right, bottom, left */
+        padding: 10px 20px 10px 20px;
+
+        /* Padding shorthand = top/bottom left/right */
+        padding: 10px 20px;
+
+
+        /* Margin on all sides */
+        margin: 20px;
+        /* margin per side */
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom : 10px;
+        margin-left: 20px;
+
+        /* margin shorthand = top, right, bottom, left */
+        margin: 10px 20px 10px 20px;
+
+        /* margin shorthand = top/bottom left/right */
+        margin: 10px 20px;
+        }
+```
+
+
+### Flaot & Alignment
+
+
+
+
