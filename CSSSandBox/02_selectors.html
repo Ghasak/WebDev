@@ -7,32 +7,67 @@
     <title>Document</title>
     <!-- Remember # for ids and . for classes -->
     <style>
+        /* Style for all elements */
+        *{
+            font-family: sans-serif;
+            font-size: 1.1em;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
         h2{
             color: red;
+            font-size:1.1em;
         }
         /* (#) for ids styling*/
-        h2#lightcoral-heading{
+        h2#primary-heading{
             color: lightcoral;
         }
         /* (.) for classes styling*/
-        h2.lightblue-heading{
+        h2.secondary-heading{
             color: lightblue;
         }
+        /* (#) you can add for a given id or class*/
+        #article-title {
+            color: green;
+        }
+        /* Multiple Selector for ids and classes*/
+        h2.secondary-heading#primary-heading{
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 5px
+        }
+        #my-footer {
+            text-align: center;
+            font-size: 18px;
+          }
     </style>
 </head>
 <body>
+
     <div>
         <h2>About</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur accusantium quisquam deserunt possimus maiores rem voluptates voluptatum accusamus laborum, culpa ratione? Neque nam nobis perspiciatis vitae numquam odio amet.</p>
 
     </div>
     <div>
-        <h2 id="lightcoral-heading">Welcome</h2>
+        <h2 id="primary-heading">Welcome</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum facere consectetur nihil earum quo eos, animi voluptas voluptatum temporibus eum non explicabo sint accusamus, sit necessitatibus. Hic, dolores voluptas?</p>
     </div>
     <div>
-        <h2 class="lightblue-heading">Contact</h2>
+        <h2 class="secondary-heading">Contact</h2>
         <p>Here is the final submitted file</p>
+    </div>
+    <!-- for id selector only -->
+    <div>
+        <h1 id = "article-title">Adding Article title</h1>
+        <p>Adding here some values</p>
+    </div>
+    <!-- for multiple selector -->
+    <div>
+        <h2 id = "primary-heading" class="secondary-heading">Secondary Heading</h2>
+
     </div>
 
 </body>

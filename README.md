@@ -507,4 +507,42 @@ h3 {
 
 ### Dev Tools Introduction
 For sake of learning the `css` we will use the second method `A.2` to keep things all in one file `index.html` file.
+#### difference between ID and Class for CSS
 
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Remember # for ids and . for classes -->
+    <style>
+        h2{
+            color: red;
+        }
+        /* (#) for ids styling*/
+        h2#lightcoral-heading{
+            color: lightcoral;
+        }
+        /* (.) for classes styling*/
+        h2.lightblue-heading{
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur accusantium quisquam deserunt possimus maiores rem voluptates voluptatum accusamus laborum, culpa ratione? Neque nam nobis perspiciatis vitae numquam odio amet.</p>
+
+    </div>
+    <div>
+        <h2 id="lightcoral-heading">Welcome</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum facere consectetur nihil earum quo eos, animi voluptas voluptatum temporibus eum non explicabo sint accusamus, sit necessitatibus. Hic, dolores voluptas?</p>
+    </div>
+    <div>
+        <h2 class="lightblue-heading">Contact</h2>
+        <p>Here is the final submitted file</p>
+    </div>
+</body>
+```
