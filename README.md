@@ -12,8 +12,6 @@ life projects. Stop having to rely on frameworks like Bootstrap for your user
 interface and learn how to create your own layouts and utility classes to build
 custom responsive websites and app UIs.
 
-## My Note
-
 - Basics of How website works
 - Setup & Tools
 - HTML 5
@@ -21,17 +19,31 @@ custom responsive websites and app UIs.
 - Responsive Design
 - Flexbox
 - CSS Grid
-- Animation (transitions, keyframes, ... etc.)
-- CSS variables, transform, Psedudo slectors,
-- Sitcky menus Overlays form styling, landing pages,
-- website deployment, Shared Host & Netlifty
-- Sass CSS pre-commpiler
--
+- Animation (transitions, key-frames, ... etc.)
+- CSS variables, transform, pseudo selectors,
+- Sticky menus Overlays form styling, landing pages,
+- website deployment, Shared Host & Netlify.
+- Sass CSS pre-compiler.
+
+## My Note
+
+There are several options to create a dashboard for data modeling and other consideration.
+
+### Python Framework
+
+- Integrate the `JS` with `Python` we can use:
+  - Django
+  - Flask (You will need `jinja` to talk to the `HTML` and also `flask-sqlalchemy` for managing the database)
+  - FastAPI
+
+- Integrate `Dash` from `plotly` and use `style.css` for better layout. Also you will need to use `jinja` engine integration with `JS` in the `index.html` file.
+- Use native plotting library like `ChartJS` or `FastJS` and integrate all the figures data using python backend jason file sharing data.
 
 ## Web Server
 
 Websites/ webpages are files stored on computers with run a piece of software called a web server.
 Basically you will need two things:
+
 - Hosting companies, provide spce on a server, webServer (Apache, Nginx, ... etc.)
 - A Domain names, `TLD`: `Top-level domain`,
 
@@ -44,15 +56,15 @@ DNS (Server): google.com 192.168.1.4 --> 192.168.1.4 <--  Web Browser--> 192.168
                                                             -> webpage -> www.google.com <- User
 ```
 
-# Useful tips and tricks
+## Useful tips and tricks
 
 - [x] In html file use (`!`) and (Inter) to get the direct
 - [x] use `p` to use the `emmet` then hit enter to get a paragraph.
 - [x] Adding a comment in `HTML`.
-    - ```<!--- Adding a comment --- > ```
+  - ```<!--- Adding a comment --- >```
 - [x] You can add new line using (command + enter) at any place in `HTML`
 - [x] You can add a dummy text file using (Lorem + enter) or (Lorem 10 + enter) to add only `10` words.
-- [x] You can use this trick to add a quick attribute with id ``` <!-- You can write div#about then hit enter to get emmet working -->``` or ```<!-- In case of div you can use directly # + Enter -->```
+- [x] You can use this trick to add a quick attribute with id ```<!-- You can write div#about then hit enter to get emmet working -->``` or ```<!-- In case of div you can use directly # + Enter -->```
 - [x] `div` is a block separator, used mainly to highlight a block.
 - [x] `span` is inline separator, which usually we use to add a style for a specific inline element (e.g, word, paragraph ... etc.).
 - [x] We can add a copyright using `&copy` symbol.
@@ -66,8 +78,9 @@ DNS (Server): google.com 192.168.1.4 --> 192.168.1.4 <--  Web Browser--> 192.168
   - To get specific color, shade, tints ..etc., use [color-hex](https://www.color-hex.com/)
   - To generate a specific pallette use [colors palette](https://coolors.co/351431-775253-bdc696-d1d3c4-dfe0dc)
 
-# 1. HTML Fundamentals
-## The Roles of HTML, CSS in WebDev:
+## 1. HTML Fundamentals
+
+### The Roles of HTML, CSS in WebDev
 
 - What is HTML?
 - Tags & Attributes
@@ -89,27 +102,27 @@ DNS (Server): google.com 192.168.1.4 --> 192.168.1.4 <--  Web Browser--> 192.168
 
 ![Tag Syntax](./Artifcats/Ch01_01.png)
 
-
 ### Doctype & basic Layout
+
 Use (`!`) for getting the code snippet for `Emmet` generator.
 
 ### Meta Tags and Search Engines
 
 - for charaset to know the formater of the html file.
-    - ``` <meta charset="UTF-8">```
+  - ```<meta charset="UTF-8">```
 - Responsive design meta, you can add
-    - ```name = viewport content = 'width=device-width, initial -scale=1.0```
-- http-equiv to check the compatability to which borswer.
-    - ```<meta http-equiv="X-UA-Compatible" content="IE=chrome"```
+  - ```name = viewport content = 'width=device-width, initial -scale=1.0```
+- http-equiv to check the compatibility to which browser.
+  - ```<meta http-equiv="X-UA-Compatible" content="IE=chrome"```
 
 - Adding description that will be shown in the google engine sit under your website link.
-    - ```<meta description="description" content="This is my website">```.
+  - ```<meta description="description" content="This is my website">```.
 - Adding a keywords for your website
-    - ```<meta name = "keywords" content="Web development, web design, other keywords">```
-- If you want your website to not be shown in `Googel search engine` or not being indexed by any other engine, for example for privacy or other considerations, use:
-    - ```<meta name = "robots" content="index, follow">```
+  - ```<meta name = "keywords" content="Web development, web design, other keywords">```
+- If you want your website to not be shown in `Google search engine` or not being indexed by any other engine, for example for privacy or other considerations, use:
+  - ```<meta name = "robots" content="index, follow">```
 
-### Headings, Paragraphs, Typography.
+### Headings, Paragraphs, Typography
 
 - You can add new line using (command + enter) at any place in `HTML`
 - You can add a dummy text file using (Lorem + enter) or (Lorem 10 + enter) to add only `10` words.
@@ -169,7 +182,7 @@ For the current file system you can follow the ideal issue
 
     <!-- Local image -->
     <!-- Alternative text, if the image is not there, the text will be shown -->
-    <!-- we can add attribute called with for contorlling the image width, hight, although it is not recommneded as we will do all these in css -->
+    <!-- we can add attribute called with for controlling the image width, hight, although it is not recommended as we will do all these in css -->
     <img src = "../Artifcats/Ch01_01.png" alt="My Image from local repository" width = "400">
     <br></br>
 
@@ -219,8 +232,8 @@ For the current file system you can follow the ideal issue
 ### Forms and Inputs Fields
 
 The forms and input fields are going to be displayed with  `HTML5` while the arg to refere to which language to be used in the `back-end` are passed using `action` attribute such as, `action="process.phd"`.
-- Notice that the reset button can clear all the fields nested under the given form tag.
 
+- Notice that the reset button can clear all the fields nested under the given form tag.
 
 ```html
 
@@ -307,15 +320,14 @@ The forms and input fields are going to be displayed with  `HTML5` while the arg
     </form>
 ```
 
-
-
-
 ### Block & Inline Level Elements
 
 #### Block Elements
+
 spand across the html,
 
 [block and inline elements in html](https://www.w3schools.com/html/html_blocks.asp)
+
 ```html
 Here are the block-level elements in HTML:
 
@@ -323,7 +335,9 @@ Here are the block-level elements in HTML:
 <fieldset><figcaption><figure><footer><form><h1>-<h6><header>
 <hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
 ```
+
 #### Inline Elements
+
 on line spaning and will will contiue the next element on right side of the previous inline element.
 
 ```html
@@ -333,6 +347,7 @@ on line spaning and will will contiue the next element on right side of the prev
 ```
 
 for example `div` is pushing things down and it’s a block element
+
 ### Divs & Spans, Classes & ids
 
 Difference between `ids` and `classes` is that `ids` are unique to a given html element, while class can be repeated multiple elements. This will be explained more in details later in `css` section.
@@ -438,8 +453,8 @@ Check the page `htmlSandbox/10_entities.html` it contains most of these elements
 
 
 ```
-[Some useful HTML Character Entities](https://www.w3schools.com/html/html_entities.asp)
 
+[Some useful HTML Character Entities](https://www.w3schools.com/html/html_entities.asp)
 
 ### Semantic Tags
 
@@ -449,10 +464,10 @@ These semantics tags are used as a customary seperation among all the elemetns i
 
 ![HTML5 Semantic Tags](./Artifcats/Ch01_02.png)
 
-
 # CSS Fundamentals
 
 Things to be covered here:
+
 - [x] Implementing CSS styles
 - [x] Using Selectors
 - [x] Fonts, Colors, etc.
@@ -469,9 +484,11 @@ Things to be covered here:
 ### 2. CSS Implementation
 
 #### The CSS Syntax
+
 ![CSS Syntax](./Artifcats/CH02_01.png)
 
 There are mainly three methods to implement `CSS` style to the `HTML` webpage. These are;
+
 #### A.1 Inline CSS with the tags
 
 This is not a good practice, and certainly should be avoided.
@@ -479,8 +496,11 @@ This is not a good practice, and certainly should be avoided.
 ```html
 <h1 style="color: lightcoral"> Heading One</h1>
 ```
+
 #### A.2 Internal CSS
+
 This is also not a good practice, but better than the first one. Under the  `title` tag add a tag called `style` and specify which tag you want to address in your style (can be also, classes, ids, or divs)
+
 ```html
     <style>
         h2{
@@ -496,6 +516,7 @@ This is also not a good practice, but better than the first one. Under the  `tit
 ```
 
 #### A.3 External
+
 This is the most common used, and it will separate all the `HTML` elements from their styles `CSS` using `style.css`.
 
 ```html
@@ -504,6 +525,7 @@ This is the most common used, and it will separate all the `HTML` elements from 
 <link rel="stylesheet" href="style.css">
 
 ```
+
 And create afile called `style.css` in same directory with the following
 
 ```css
@@ -514,13 +536,14 @@ h3 {
 ```
 
 ### Dev Tools Introduction
+
 For sake of learning the `css` we will use the second method `A.2` to keep things all in one file `index.html` file.
+
 #### Difference between ID and Class for CSS
 
 - [x] `node` and `elment` are same, can be used exchangabliy.
 - [x] Element also can be refered to as `tag`
 - [x] Selector for CSS is the way to access and style a given `tag:element:node`.
-
 
 ```html
 
@@ -616,10 +639,12 @@ For sake of learning the `css` we will use the second method `A.2` to keep thing
 ### Dev Tools Introduction
 
 In  Google chrome:
+
 - (option + i) will show the developer tool options
 - (option command + j ) will open the `JavaScript` console.
 
 ### Fonts in CSS
+
 #### General font notes
 
 There several ways to use fonts and font-style with `HTML5` and `CSS` components.
@@ -629,9 +654,10 @@ Here we have web safe fonts, which mean almost every browser having this set of 
 - [x] You can get fonts form `www.google.fonts.com` and select a font you want like following:
 ![Google fonts](./Artifcats/CH02_03.png)
 
-
 #### Fonts already available
+
 Similar to what we saw in the `General font notes section`.
+
 #### Link fonts remotely
 
 You can use either the `link` in `HTML5` like
@@ -649,6 +675,7 @@ You can use either the `link` in `HTML5` like
 
     </style>
 ```
+
 or you can copy the `CSS` selector with font `@import` which will allow us to remotly connect any font or other `CSS` style-files.
 
 ```html
@@ -663,12 +690,12 @@ or you can copy the `CSS` selector with font `@import` which will allow us to re
     </style>
 ```
 
-
-
-#### Link fonts locally.
+#### Link fonts locally
 
 Locally connecting fonts is simiarl to add them like `style.css` files. We have explicity to add the `font file` to the same directory and refer to it.
+
 - You can also put the `@font-face` style in the `style.css` separated file and refer to it inside the `index.html` file.
+
 ```html
 
     <style>
@@ -694,11 +721,8 @@ Locally connecting fonts is simiarl to add them like `style.css` files. We have 
     </div>
 ```
 
-
-
-
-
 ### Font Size
+
 We can use font size based on `CSS units absolute` as shown below.
 ![Font size Absolute](./Artifcats/CH02_04.png)
 
@@ -755,6 +779,7 @@ Also, there is `CSS units relative` as shown below
 ### Color types
 
 Colors can be used in `HTML` either:
+
 - color name (e.g., red, coral, ... etc.)
 - RGB as in (red, green , blue) ranging between 0 and 255. (e.g., rgb(0,0,0), rgb(100,100,100))
 - Hexadecimal number (e.g., #ffff, #ccc, #fff000)
@@ -797,9 +822,7 @@ Colors can be used in `HTML` either:
 
 ```
 
-
 ### Backgrounds & Boarders
-
 
 ```html
 
@@ -845,6 +868,7 @@ Colors can be used in `HTML` either:
 ```
 
 ### Box Model, Margin & Padding
+
 For box model, margin and padding we can refer:
 ![Box Model, Margin and Padding](./Artifcats/CH02_06.png)
 
@@ -889,9 +913,5 @@ For box model, margin and padding we can refer:
         }
 ```
 
-
-### Flaot & Alignment
-
-
-
+### Float & Alignment
 
