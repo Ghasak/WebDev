@@ -10,7 +10,7 @@ CSS3+ technologies like Flexbox and CSS Grid as well as the Sass pre-compiler.
 This course includes hours of both learning & studying sections along with real
 life projects. Stop having to rely on frameworks like Bootstrap for your user
 interface and learn how to create your own layouts and utility classes to build
-custom responsive websites and app UIs.
+custom responsive websites end app UIs.
 
 - Basics of How website works
 - Setup & Tools
@@ -36,24 +36,17 @@ There are several options to create a dashboard for data modeling and other cons
   - Flask (You will need `jinja` to talk to the `HTML` and also `flask-sqlalchemy` for managing the database)
   - FastAPI
 
-- Integrate `Dash` from `plotly` and use `style.css` for better layout. Also
-  you will need to use `jinja` engine integration with `JS` in the `index.html`
-  file.
-- Use native plotting library like `ChartJS` or `FastJS` and integrate all the
-  figures data using python backend jason file sharing data.
-
+- Integrate `Dash` from `plotly` and use `style.css` for better layout. Also you will need to use `jinja` engine integration with `JS` in the `index.html` file.
+- Use native plotting library like `ChartJS` or `FastJS` and integrate all the figures data using python back-end `json file` sharing data.
 - Other things to be considered,
- - Bootstrap for `CSS` with JavaScript
- - Old way for querying using `JQuery`.
- - Using Frameworks for JS such as `Angular`, `React` or `Vue`.
- - Writing a desktop multi-platforms such as `Electon`.
- - Using `Babal` to translate old `JS` written before `ES6`.
- - `ESlint` is a lintier that can be used with `JS` to highlight the code
-   similar to `Black` but more.
- - `NodeJs` form Google which is the basic for writing a non-server-based
-   applications.
- - For UX and UI (User Experience and User Interface) there are several options
-   and designs.
+     - Bootstrap for `CSS` with JavaScript
+     - Old way for querying using `JQuery`.
+     - Using Frameworks for JS such as `Angular`, `React` or `Vue`.
+     - Writing a desktop multi-platforms such as `Electon`.
+     - Using `Babal` to translate old `JS` written before `ES6`.
+     - `ESlint` is a lintier that can be used with `JS` to highlight the code similar to `Black` but more.
+     - `NodeJs` form Google which is the basic for writing a non-server-based applications.
+     - For UX and UI (User Experience and User Interface) there are several options and designs.
 
 ## Web Server
 
