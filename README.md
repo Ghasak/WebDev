@@ -915,3 +915,290 @@ For box model, margin and padding we can refer:
 
 ### Float & Alignment
 
+If you like to align your text to the middle of the screen you can wrap all the tags that you want to center with a tag called `div` with a class `container`. Then assing a astyle to this container with `margin: auto` this will allow your text to be centerd.
+
+
+```html
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family : Arial, Helvetica, sans-serif;
+            line-height: 1.5em;
+        }
+
+        .container {
+            max-width: 1000px; /* width: 960px; */
+            margin: 30px;
+            margin: auto;
+        }
+
+        .clr{
+            clear: both;
+        }
+
+        .box{
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box p{
+            /* text-align: left, center; justify; */
+            text-align: justify;
+        }
+
+        #box-2{
+            float:left;
+            width: 68%;
+
+        }
+        #box-3{
+            float:right;
+            width: 30%;
+
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+      </div>
+
+      <div id="box-2" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+      </div>
+
+      <div id="box-3" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+        <div class="clr"></div>
+
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+      </div>
+    </div>
+
+
+```
+
+- To make your website more repsonsive for any device you can add
+
+```html
+    max-width: 960px; /* width: 960px; */
+```
+
+- Float are not used nowadays as they have been replaced with `FlexBox` and `CSS Grid` which both are integrated with CSS. (we dont need to learn Float).
+
+
+### Link State & Button Stylings
+
+The following snippet will allow us to use a style for either a link or a button with a cool feature for a great layout. The snippet will genereate an `HTML` with the following:
+
+- Button and link will be shown with a light blue color and will be underlined and change the color to red (also you can make the text more bigger) once you hover over the button or the linkk.
+
+![Link State and Button Stylings](./Artifcats/CH02_07.png)
+
+```html
+
+    <style>
+
+        body{
+            font-family: arial,helvetica,sans-ser;
+            font-size: 16 px;
+        }
+
+        a{
+            color: blue;
+            text-decoration: none; /*removes underline*/
+        }
+        a:hover{
+            color: coral;
+           /* font-size: 40px; */
+            text-decoration: underline; /* underline the text */
+        }
+        a:visited{
+            color: white;
+        }
+        a:active{
+            color: red;
+        }
+
+        /* Button Styling */
+        .btn{
+            background-color: #4c6ca0; /* background color is light Blue */
+            color: #ffff; /* text color is white */
+            border: none; /* Remove borders */
+            font-size: 16px; /* font-size: 1.5em; */
+            padding: 10px 20px; /* padding: 10px 20px 10px 20px; */
+            border-radius: 10px; /* Rounded Corners */
+            cursor: pointer; /* Change cursor to pointer when hovering over button */
+        }
+        .btn:hover{
+            color: lightgray; /* text color is light gray when hovering over button */
+            background-color: crimson;
+
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>Links State & Button styling</h1>
+    <p> Here we add a paragraph
+    </p>
+    <a class="btn" href="http://www.google.com" target="_blank">Click Me</a>
+    <br></br>
+    <button class="btn">My Button</button>
+</div>
+
+```
+
+### Navigation Menu Styling
+
+Navigation will be used as you can sepcify for each elment/tag/node in the given html. This will allow more contorl over writing and drawing objects.The following code will generate a styled html look like:
+
+![Navigation menu styling](./Artifcats/CH02_08.png)
+
+```html
+
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+
+        /* Navigation nav-bar styling */
+        .nav-bar{
+            list-style: none;
+            background: #4c6ca0;
+            color: #ffff;
+            padding: 2px;
+            margin: 0;
+            border-radius: 10px;
+            overflow: auto; /* This is to make the nav-bar background to be shown, also there is scrollbar to be hidden */
+        }
+
+        .nav-bar li{
+            float: left;
+            /* dont put the padding here if you want to show a whole square colored when you hover otherwise, it will only change a surrounding the text */
+
+        }
+
+        .nav-bar li a{
+            padding: 15px 20px;
+            display: block;
+            color: #ffff;
+            text-decoration: none;
+        }
+
+        .nav-bar li a:hover{
+            background: lightcoral;
+            color: whitesmoke;
+            border-radius: 10px;
+            text-decoration:underline;
+        }
+
+        /* Side-Menu Styling */
+
+
+        .side-menu{
+            list-style: none;
+            border: 1px #ddd solid;
+            border-radius: 20px;
+            width: 150px;
+            padding: 10px 10px;
+        }
+
+        .side-menu li{
+            font-size : 18px;
+            line-height: 2.4em;
+            border-bottom: solid 1px #ddd;
+
+        }
+        /* Select a */
+        .side-menu li:last-child{
+            border-bottom: none;
+        }
+
+        .side-menu li{
+            float: none;
+        }
+        .side-menu li:hover{
+            background: lightcoral;
+            color: whitesmoke;
+            border-radius: 10px;
+        }
+
+
+
+        /* Styling the link anchor */
+        .side-menu li a{
+            color: blue;
+            text-decoration: none;
+        }
+        .side-menu li a:visited{
+            color: darkred;
+            text-decoration: underline;
+        }
+        .side-menu li a:hover{
+            color:green;
+            text-decoration: underline;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <ul class="nav-bar">
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Services</a></li>
+        <li> <a href="#">Contact</a></li>
+    </ul>
+    <ul class="side-menu">
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Services</a></li>
+        <li> <a href="#">Contact</a></li>
+    </ul>
+
+```
+
+
+
+
+
+
+

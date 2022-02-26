@@ -5,41 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family : Arial, Helvetica, sans-serif;
+            line-height: 1.5em;
+        }
+
+        .container {
+            max-width: 1000px; /* width: 960px; */
+            margin: 30px;
+            margin: auto;
+        }
+
+        .clr{
+            clear: both;
+        }
+
+        .box{
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box p{
+            /* text-align: left, center; justify; */
+            text-align: justify;
+        }
+
+        #box-2{
+            float:left;
+            width: 68%;
+
+        }
+        #box-3{
+            float:right;
+            width: 30%;
+
+        }
+
+    </style>
+
   </head>
   <body>
-    <div id="box-1" class="box">
-      <h3>Heading</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-        recusandae corporis explicabo. Culpa quod sit minus labore ducimus
-        dignissimos quidem vero, inventore dolores alias adipisci eos
-        accusantium sunt porro sequi?
-      </p>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+      </div>
+
+      <div id="box-2" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+      </div>
+
+      <div id="box-3" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+        <div class="clr"></div>
+
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          recusandae corporis explicabo. Culpa quod sit minus labore ducimus
+          dignissimos quidem vero, inventore dolores alias adipisci eos
+          accusantium sunt porro sequi?
+        </p>
+      </div>
     </div>
 
-    <div id="box-2" class="box">
-      <h3>Heading</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-        recusandae corporis explicabo. Culpa quod sit minus labore ducimus
-        dignissimos quidem vero, inventore dolores alias adipisci eos
-        accusantium sunt porro sequi?
-      </p>
-    </div>
 
-    <div id="box-3" class="box">
-      <h3>Heading</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-        recusandae corporis explicabo. Culpa quod sit minus labore ducimus
-        dignissimos quidem vero, inventore dolores alias adipisci eos
-        accusantium sunt porro sequi?
-      </p>
-    </div>
-    <div>
-      <button id="btn-1" class="btn">Button</button>
-      <button id="btn-2" class="btn">Button</button>
-      <button id="btn-3" class="btn">Button</button>
-    </div>
+
+
+
+
+
   </body>
 </html>
